@@ -46,7 +46,7 @@ function getData() {  firebase.database().ref("/").on('value', function(snapshot
 
 getData();
 
-function RedirectToChatPage(name){
+function redirectToRoomName(name){
 console.log(name);
 localStorage.setItem("room_Name", name);
 window.location = "Chatpage.html";
